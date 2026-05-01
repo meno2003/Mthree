@@ -51,36 +51,27 @@ public class RockPaperScissors {
              player2 = IR.next();
              player2 = player2.toUpperCase();
 
-
-
              // If Draw
              if (player1.equals(player2)){
                  System.out.println(" draw ");
              }
-
-
 
              // If player1 selects Rock outcome
              if (player1.equals(rock)&&player2.equals(paper)) {
                  System.out.println(" unlucky player1, player 2 wins!");
                  scorePlayer2 ++;
 
-
-
              }
              if (player1.equals(rock)&&player2.equals(scissors)) {
                  System.out.println(" unlucky player2, player 1 wins!");
-                 scorePlayer2 ++;
+                 scorePlayer1 ++;
 
              }
-
 
              // If player1 selects Paper outcomes
              if (player1.equals(paper)&&player2.equals(rock)) {
                  System.out.println(" unlucky player2, player 1 wins!");
                  scorePlayer1 ++;
-
-
 
              }
              if (player1.equals(paper)&&player2.equals(scissors)) {
@@ -94,30 +85,28 @@ public class RockPaperScissors {
                  System.out.println(" unlucky player1, player 2 wins!");
                  scorePlayer2 ++;
 
-
-
              }
              if (player1.equals(scissors)&&player2.equals(paper)) {
                  System.out.println(" unlucky player2, player 1 wins!");
                  scorePlayer1 ++;
 
              }
-
-
              System.out.println();
              System.out.println(" the score for player 1 is " + scorePlayer1);
              System.out.println(" the score for player 2 is " + scorePlayer2);
          }
          System.out.println();
-
-         System.out.println("thats was the final round");
+         System.out.println("that was the final round");
          System.out.println();
+
          if (scorePlayer1>scorePlayer2){
              System.out.println("Player 1 wins! well played");
          }
+
          if (scorePlayer2>scorePlayer1){
              System.out.println("Player 2 wins! well played!");
          }
+
          if (scorePlayer2 == scorePlayer1){
              System.out.println(" Draw, well played");
          }
